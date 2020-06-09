@@ -145,16 +145,16 @@ counts.saveAsTextFile(outputFile);
 * These different components can be arranged in three different deployment modes across the cluster
 ### Spark Runtime Architecture: Local Mode
 In <font color=red>local mode</font>, every Spark component runs within the same JVM. However, the Spark Application can still run in parallel as there may be more than one executor active. <font color=pink>Local mode is good when developing/debugging</font>
->Local mode Spark Runtime Architecture:\
-<img src='Local_mode.png' width='50%'>
+>Local mode Spark Runtime Architecture:
+>><img src='Local_mode.png' width='50%'>
 ### Spark Runtime Architecture: Cluster Mode
 In <font color=red>cluster mode</font>, every component, including the driver program, is executed on the cluster; hence, upon launching, the job can run autonomously. <font color=pink>This is the common way of running non-interactive Spark jobs.</font>
->Cluster mode Spark Runtime Architecture:\
-<img src='Cluster_mode.png' width='50%'>
+>Cluster mode Spark Runtime Architecture:
+>><img src='Cluster_mode.png' width='50%'>
 ### Spark Runtime Architecture: Client Mode
 In <font color=red>client mode</font>, the driver program talks directly to the executors on the worker nodes. Therefore, the machines hosting the driver program has to be connected to the cluster until job completion. Client mode must be used when the applications are interactive, as happens in the Python or Scala Spark Shells.
->Client mode Spark Runtime Architecture:\
-<img src='Client_mode.png' width='50%'>
+>Client mode Spark Runtime Architecture:
+>><img src='Client_mode.png' width='50%'>
 ## Spark Context
 * The deployment mode is set in the *<font color=red>Spark Context</font>*, which is also used to set the configuration of a Spark application, including the cluster it connects to in cluster mode.
 * E.g. This hard-coded Spark Context directs the execution to run locally, using 2 threads:
