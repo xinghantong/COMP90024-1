@@ -70,7 +70,7 @@ $HADOOP_HOME/bin/hadoop jar \
 * Apache Spark was designed to reduce the latency inherent in the Hadoop approach for the execution of MapReduce jobs.
 * Spark can operate within the Hadoop architecture, using YARN and Zookeeper to manage computing resources, and storing data on HDFS.
 ## Spark Architecture
-* One of the strong points of Spark is the tightly-coupled nature of its main components:\
+* One of the strong points of Spark is the tightly-coupled nature of its main components:
 <img src='Spark_Architecture.png' width='50%'>
 * Spark ships with a cluster manager of its own, but it can work with other managers, such as YARN or MESOS.
 ## Programming on Spark
