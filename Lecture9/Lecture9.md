@@ -71,7 +71,8 @@ $HADOOP_HOME/bin/hadoop jar \
 * Spark can operate within the Hadoop architecture, using YARN and Zookeeper to manage computing resources, and storing data on HDFS.
 ## Spark Architecture
 * One of the strong points of Spark is the tightly-coupled nature of its main components:
-<img src='Spark_Architecture.png' width='50%'>
+> Example of Spark Architecture
+>><img src='Spark_Architecture.png' width='50%'>
 * Spark ships with a cluster manager of its own, but it can work with other managers, such as YARN or MESOS.
 ## Programming on Spark
 * Spark is mostly written in Scala, and uses this language by default in its interactive shell. However, the APIs of Spark can be accessed by different languages: R, Python, and Java.
