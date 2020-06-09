@@ -155,10 +155,27 @@
 * Supports point-point, broadcast communications
 ### Example: HelloWorld MPI
 ```c
-#include <stdio.h>#include <mpi.h>
-int main (argc, argv)int argc;char *argv[];{	int rank, size;	MPI_Init (&argc, &argv); /* starts MPI */	MPI_Comm_rank (MPI_COMM_WORLD, &rank); /* get current process id */	MPI_Comm_size (MPI_COMM_WORLD, &size); /* get number of processes */	printf( "Hello world from process %d of %d\n", rank, size );	MPI_Finalize();	return 0;}
+#include <stdio.h>
+#include <mpi.h>
+
+int main (argc, argv)
+int argc;
+char *argv[];
+{	
+    int rank, size;	
+    MPI_Init (&argc, &argv); /* starts MPI */	
+    MPI_Comm_rank (MPI_COMM_WORLD, &rank); /* get current process id */
+    MPI_Comm_size (MPI_COMM_WORLD, &size); /* get number of processes */	
+    printf( "Hello world from process %d of %d\n", rank, size );	
+    MPI_Finalize();	
+    return 0;
+}
 $mpicc -o hello_world hello_world.c
-$ mpirun -np 4 hello_worldHello world from process 1 of 4Hello world from process 2 of 4Hello world from process 3 of 4Hello world from process 0 of 4
+$ mpirun -np 4 hello_world
+Hello world from process 1 of 4
+Hello world from process 2 of 4
+Hello world from process 3 of 4
+Hello world from process 0 of 4
 ```
 ## Erroneous Assumptions of Distributed Systems
 1. The network is reliable
