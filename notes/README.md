@@ -1121,7 +1121,7 @@ docker-machine ssh manager docker service update --image alwynpan/comp90024:demo
 * A database has to be declared partitioned during the creation
 ### MapReduce Algorithms
 * This family of algorithms is particularly suited to parallel computing of a SIMD
-* The first step <font color=pink>Map</font>, distributes daa across machines, while the second state <font color=pink>Reduce</font> hierarchically summarizes them until the result is obtained
+* The first step <font color=pink>Map</font>, distributes data across machines, while the second state <font color=pink>Reduce</font> hierarchically summarizes them until the result is obtained
 * Apart from parallelism, its advantage lies in moving the process to where data are and reducing network traffic.
 * Pseudo code for MapReduce Algorithm:
 ```
