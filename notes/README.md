@@ -1014,7 +1014,7 @@ docker-machine ssh manager docker service update --image alwynpan/comp90024:demo
 
 ## Four "V"s
 * <font color=red>V</font>olume: The size of the data. (In Giga, Tera, Peta...)
-* <font color=red>V</font>elocity: The frequency at which new data ios being brought into the system and analytics performed
+* <font color=red>V</font>elocity: The frequency at which new data is being brought into the system and analytics performed
 * <font color=red>V</font>ariety: The variability and complexity of data schema. The more complex the data schemas you have, the higher the probability of them changing along the way, adding more complexity.
 * <font color=red>V</font>eracity: The level of trust in the data accuracy; The more diverse sources you have, the more unstructured they are, the less veracity you have.
 ## Big data needs for Ad-hoc Solutions
